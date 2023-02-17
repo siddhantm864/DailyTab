@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(250deg, rgb(46, 46, 88), rgb(3, 3, 142));
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    
+}
+
+header {
+    font-size: 1.5rem;
+}
+.hii{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: .5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: darkblue;
+    background: whitesmoke;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+form button:hover {
+    color: rgb(50, 50, 87);
+    background: rgba(191, 209, 240, 0.549);
+    
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: .5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease;
+    border-radius: 25px;
+}
+
+.todo li {
+    flex: 1;
+    
+}
+
+.trash-btn{
+    background: #ff6f47;
+    color: aliceblue;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 20px;
+}
+.complete-btn {
+    background: #ff6f47;
+    color: aliceblue;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 25px;
+    
+}
+
+.complete-btn {
+    background: green;
+}
+
+.todo-item {
+    padding: 0 .5rem 0 .3rem;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+select {
+    color: rgb(50, 50, 87);
+    width: 10rem;
+    cursor: pointer;
+    padding: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: rgb(12, 41, 70);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    
+    
+    
+}
+
+.select:hover::after {
+    background: rgb(245, 212, 96);
+    color: #2e2f31;
+    
+}
+.foot{
+    z-index: 2;
+}
+.footer{
+    /* background: none repeat scroll 0 0 transparent; */
+    position: fixed;
+    background-color: blue/;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(250deg, rgb(46, 46, 88), rgb(3, 3, 142));
+}
